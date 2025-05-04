@@ -1,2 +1,167 @@
 # money1m.com
-1m
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>money1m.com</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #1d1d1d;
+      color: #fff;
+    }
+    header, nav, main, footer {
+      padding: 20px;
+    }
+    header {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid #e60000;
+    }
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      color: #e60000;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+    nav a:hover {
+      background-color: #e60000;
+      border-radius: 5px;
+    }
+    main {
+      padding: 40px 20px;
+      background-color: #1d1d1d;
+    }
+    .wallet, .auth, .games, .game {
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 20px auto;
+      text-align: center;
+      border: 3px solid #e60000;
+    }
+    .btn {
+      margin-top: 10px;
+      background: #e60000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+    .btn:hover {
+      background-color: #b30000;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      background-color: #111;
+      padding: 10px 0;
+      border-top: 5px solid #e60000;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .affiliate-section {
+      background-color: #333;
+      padding: 20px;
+      margin-top: 30px;
+      text-align: center;
+      border-radius: 10px;
+      border: 3px solid #e60000;
+    }
+    .affiliate-section h2 {
+      color: #e60000;
+    }
+    .affiliate-btn {
+      background-color: #28a745;
+      padding: 15px 30px;
+      color: white;
+      font-size: 1.2em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .affiliate-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner de promoção -->
+  <div class="banner">
+    Deposite acima de R$100 e ganhe um bônus de R$500! Aproveite esta oportunidade!
+  </div>
+
+  <!-- Mensagem para os primeiros 20 depositantes -->
+  <div class="deposit-msg">
+    Os primeiros 20 depositantes poderão sacar até R$100! Corra e aproveite!
+  </div>
+
+  <header>
+    <div class="logo">money1m.com</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Depositar</a>
+      <a href="#">Sacar</a>
+      <a href="#">Jogos</a>
+      <a href="#">Perfil</a>
+      <a href="#">Afiliados</a> <!-- Link para a página de afiliados -->
+    </nav>
+  </header>
+
+  <main>
+    <div class="affiliate-section">
+      <h2>Programa de Afiliados</h2>
+      <p>Ganhe até R$50 por indicação! Para cada 5 pessoas indicadas, você ganha R$50 adicionais!</p>
+      <p>Compartilhe seu link de afiliado e comece a ganhar agora!</p>
+      <button class="affiliate-btn">Gerar Link de Afiliado</button>
+    </div>
+
+    <div class="auth">
+      <h2>Login</h2>
+      <input type="text" placeholder="Email ou usuário">
+      <input type="password" placeholder="Senha">
+      <button class="btn">Entrar</button>
+      <p>Não tem conta? <a href="#" style="color:#e60000;">Cadastre-se</a></p>
+    </div>
+
+    <div class="wallet">
+      <h2>Carteira</h2>
+      <p>Saldo atual: R$ 1.250,00</p>
+      <button class="btn">Sacar</button>
+      <button class="btn">Depositar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 money1m.com. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Simulação para geração de link de afiliado
+    document.querySelector('.affiliate-btn').addEventListener('click', function() {
+      alert('Link de afiliado gerado: https://money1m.com/affiliado/123456');
+    });
+  </script>
+</body>
+</html>
